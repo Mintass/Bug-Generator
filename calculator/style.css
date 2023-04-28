@@ -1,0 +1,83 @@
+body{
+    background-color:#000;
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    width: 260px;
+    height: 320px;
+    margin-top: 100px;
+    border-radius: 50px;
+    background: #434248;
+    box-shadow:  20px 20px 60px #39383d,
+                 -20px -20px 60px #4d4c53;
+    justify-content: center;
+}
+.calculator button {
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eee;
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.calculator button:hover{
+    background-color: #ccc;
+    color: white;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 50px);
+}
+.calculator-outputpart{
+    grid-column: span 4;
+}
+.calculator-output{
+    width: 240px;
+    height: 50px;
+    margin: 0;
+    text-align: right;
+    line-height: 2.7;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+/* button's color and size */
+#clear{
+    grid-column: span 2;
+    background-color: grey;
+}
+.switch{
+    background-color: grey;
+}
+.num{
+    background-color: #39383d;
+}
+.zero{
+    grid-column: span 2;
+    background-color: #39383d;
+}
+.dot{
+    background-color: #39383d;
+}
+.opr{
+    background-color: orange;
+}
+.equ{
+    background-color: orange;
+}
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2022年11月22日, 下午9:27:08
+    Author     : Lenovo
+*/
+

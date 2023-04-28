@@ -1,0 +1,8 @@
+(defparameter *newlist* nil)
+(defun my-member (num thelist)
+    (cond ((null thelist)
+           (push nil *newlist*))
+          ((eq num (car thelist))
+           (push t *newlist*))
+          (t (my-member num (cdr thelist))))
+    (print *newlist*))
